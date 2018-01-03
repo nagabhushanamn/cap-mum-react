@@ -115,7 +115,7 @@ how to create function-obj in .js-lang ?
 --------------------------------------------------------------------------
 
 
-3. closures
+4. closures
 
    A closure is a function having access to the parent scope,
    even after the parent function has closed.
@@ -127,3 +127,36 @@ how to create function-obj in .js-lang ?
 
 
 --------------------------------------------------------------------------
+
+5. this 
+
+   ==> current context's owner
+
+
+
+   function binding
+   -----------------
+
+   a. static function-binding
+   b. dynamic function-binding
+
+
+
+// how to create many similar objects ?
+
+  Es5 : using Constructor function
+
+  Es6 : using class
+
+------------------------------
+
+in .js-lang , we can invoke functions in 4 ways
+
+ 1. function invocation  ( this ==> global-obj)
+ 2. method invocation    ( this ==> invoker-obj)
+ 3. call/apply/bind invocation ( this ==> arg-obj )
+ 4. Constructor invocation ( this ==> new-obj )
+
+---------------------------------------------------- 
+
+
