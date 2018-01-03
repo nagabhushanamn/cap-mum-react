@@ -1,37 +1,32 @@
 
+--------------------------------------------------------------------------
 
 1. data-types
 
     a. simple / primitives  ==> values
-
-            1. string
-            2. number
-            3. boolean
-            4. undefined
-            5. symbol ( es6 )
+        
+        1. string
+        2. number
+        3. boolean
+        4. undefined
+        5. symbol ( es6 )
 
     b. complex/reference    ==> objects
 
-
         how to create object in .js lang ?
-
         syntax:
-
          new Constructor()
-
         e.g
-
         new Object()
         new Employee() 
 
         imp-note:
-
         by default, all .js objects are extensible & configurable
 
-        literal-style objects
-
+        literal-style objects , 
          1. Object  ==> to create obj-wrapper
          2. Array
          3. RegExp
          4. Function
 
+ --------------------------------------------------------------------------
