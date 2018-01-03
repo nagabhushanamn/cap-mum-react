@@ -30,3 +30,100 @@
          4. Function
 
  --------------------------------------------------------------------------
+
+
+ 2. Execution-Context  / scope
+
+  memory/stack-frame with given args & locals
+  to execute instructions
+
+  2 phases
+  ---------
+
+   a. creation / push 
+
+        all variables declared with 'var' keyword
+        will get hoisted with default value ( undefined )
+
+   b. execution / pop
+
+        instructions will execute in seq.
+
+
+
+
+    ==> by default , every .js-runtime has one global-context 
+    ==> global-context always executed by global-obj 
+
+    global-obj
+
+    browser-envi  ==> window
+    Node.js       ==> process
+    ..
+
+    
+
+    ==> every func-invocation, also creates new-context which is
+        child of in which context that func has declared/created
+
+
+
+problems 'var' keyword 
+---------------------
+
+==>  variables always get hoist
+==>  we can re-declare same variables within context
+==>  No block-scope 
+
+soln:
+
+==> 'let' & 'const' keywords  ( from Es6 )
+
+
+let  ==> mutable reference
+const ==> immutable reference
+
+--------------------------------------------------------------------------
+
+3. FP in .js
+
+
+  FP principles
+
+  ==> A function can be stored in a variable or value
+  ==> The return value of a function can be a function
+  ==> A parameter of a function can be a function
+
+
+how to create function-obj in .js-lang ?
+
+2 ways
+
+ 1. function declaration
+    
+    ==> Named function
+    ==> always get hoisted with function-obj
+    ==> function-obj created at context-creation phase
+
+ 2. function expression  
+
+    ==> anonymous function
+    ==> function-obj created at context-Execution phase
+
+    
+
+--------------------------------------------------------------------------
+
+
+3. closures
+
+   A closure is a function having access to the parent scope,
+   even after the parent function has closed.
+
+   why/where we need closures ?
+
+   ==> to abstract public-behav of any module to other
+   ==> while executing func async, to access parent scope data
+
+
+--------------------------------------------------------------------------
