@@ -71,6 +71,7 @@
 
 // // let [min, avg, , max, other = 5] = nums;
 
+
 // let min;
 // let avg;
 // let max;
@@ -146,8 +147,6 @@
 //     console.log('java employee...');
 //     console.log(e1[javaSymbol]);
 // }
-
-
 
 
 // 8. for-of loop  

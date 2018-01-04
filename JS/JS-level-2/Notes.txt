@@ -3,9 +3,8 @@
 ECMAScript 2015  or ES6
 ------------------------
 
-New Syntax
-------------
-
+1. New -syntax
+---------------
    1. let & const keywords with block-scope
    2. function with default & rest params
    3. String interpolation
@@ -17,6 +16,7 @@ New Syntax
    9. iterator
    10. Generator ( later )
 
-   -------------------------------
-
-   11. arrow functions
+ 2. arrow functions
+ 3. class syntax
+ 4. collections
+ 5. Es6 Modules
