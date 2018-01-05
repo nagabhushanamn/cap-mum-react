@@ -7,6 +7,7 @@ class App extends Component {
     this.state = {
       products: [
         {
+          id: 1,
           name: 'Laptop',
           price: 198000,
           description: 'New Mac',
@@ -18,6 +19,7 @@ class App extends Component {
           ]
         },
         {
+          id: 2,
           name: 'Mobile',
           price: 18000,
           description: 'New pro',
@@ -32,10 +34,25 @@ class App extends Component {
     }
   }
 
+  handleNewReview(review, id) {
+    let { products } = this.state;
+    products = products.map((product, idx) => {
+      if (product.id === id) {
+        product.reviews.push(review);
+        return product
+      }
+      else
+        return product;
+    })
+    this.setState({
+      products
+    });
+  }
+
   renderProducts() {
     let { products } = this.state;
     return products.map((product, idx) => {
-      return <Product product={product} key={idx} idx={idx} />
+      return <Product onNewReview={(review, id) => { this.handleNewReview(review, id) }} product={product} key={idx} idx={idx} />
     });
   }
 

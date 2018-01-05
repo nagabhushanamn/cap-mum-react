@@ -44,7 +44,7 @@ class Product extends Component {
                             <div className="col-md-6 col-sm-6">
                                 {this.renderReviews(product)}
                                 <hr/>
-                                <ReviewForm />
+                                <ReviewForm onNewReview={(review)=>{this.props.onNewReview(review,product.id)}}/>
                             </div>
                         </div>
                     </div>
