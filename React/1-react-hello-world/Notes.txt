@@ -1,0 +1,6 @@
+
+
+How to create React-component ?
+
+ step-1 : create component-class
+ step-2 : Instantiate component-class & render to virtual-dom

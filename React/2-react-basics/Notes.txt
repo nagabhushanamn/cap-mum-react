@@ -1,0 +1,36 @@
+
+
+HTML element/component
+-------------------------
+
+<input /> instance of ==> HTMLInputElement
+
+element
+---------
+
+   -> can take props/attributes while instantiating
+
+     e.g
+
+     <input type="password"/>
+
+    --> can have own state ( internal data )
+
+
+  -------------------------------------------
+
+  element,
+
+     - props
+     - state   
+
+  ---------------------------------------------   
+
+
+
+ React-App
+ --------------
+
+   RootComponent ( App )
+
+      - HitButton

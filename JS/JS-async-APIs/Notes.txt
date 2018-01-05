@@ -1,0 +1,27 @@
+
+
+by default,
+after event , callbacks always executes async
+
+-------------------------------------------
+
+// module-1 ( dependency)
+function f1(){
+    // delayed resp..
+}
+
+// module-2 ( dependent)
+function f2(){
+    f1();//
+}
+
+//---------------------------------------------
+
+
+Async APIs
+--------------
+
+    ==> promise API  ( from Es6 )
+    ==> RxJS ( Reactive eXtensions for JavaScript)  ( future proposal)
+
+-----------------------------------------------    
