@@ -17,8 +17,9 @@ class Product extends Component {
         });
     }
     renderBuyBtn(product) {
+        let {onBuy}=this.props;
         if (product.canBuy)
-            return (<button className="btn btn-sm btn-primary">buy</button>)
+            return (<button onClick={()=>{onBuy(product)}} className="btn btn-sm btn-primary">buy</button>)
         else
             return null;
     }
