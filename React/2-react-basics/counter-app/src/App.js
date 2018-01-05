@@ -12,9 +12,9 @@ class App extends Component {
     }
     console.log('App :: constructor()');
   }
-  incrementTotalCount() {
+  incrementTotalCount(v) {
     this.setState({
-      totalCount: this.state.totalCount + 1
+      totalCount: this.state.totalCount + v
     });
   }
   render() {
@@ -27,9 +27,9 @@ class App extends Component {
           <div className="panel-heading">react - {title}</div>
           <div className="panel-body">
             <div>
-              <HitButton onHit={()=>{this.incrementTotalCount()}} label="1" />
-              <HitButton onHit={()=>{this.incrementTotalCount()}} label="10" />
-              <HitButton onHit={()=>{this.incrementTotalCount()}} label="-10" />
+              <HitButton onHit={(v) => { this.incrementTotalCount(v) }} label={1} />
+              <HitButton onHit={(v) => { this.incrementTotalCount(v) }} label={10} />
+              <HitButton onHit={this.incrementTotalCount.bind(this)} label={-10} />
             </div>
             <div style={{ clear: 'both' }}>
               <hr />

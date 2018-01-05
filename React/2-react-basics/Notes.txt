@@ -34,3 +34,20 @@ element
    RootComponent ( App )
 
       - HitButton
+      - TotalCountDisplay
+
+------------------------------------------
+
+
+
+react component API
+---------------------
+
+      
+      component's life-cycle phases
+
+       -> Mounting
+       -> Updating
+       -> UnMounting
+
+--------------------------       

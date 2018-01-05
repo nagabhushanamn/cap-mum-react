@@ -13,7 +13,7 @@ class HitButton extends Component {
         this.setState({
             count: this.state.count + 1
         });
-        this.props.onHit();
+        this.props.onHit(this.props.label);
     }
     render() {
         console.log('HitButton :: render()');
@@ -22,7 +22,7 @@ class HitButton extends Component {
         return (
             <div style={{ float: 'left', margin: '5px' }}>
                 <button onClick={() => { this.handleBtnClick() }} className="btn btn-primary">
-                    {label}  ==> <span className="badge">{count}</span>
+                    {label}  -> <span className="badge">{count}</span>
                 </button>
             </div>
         );
