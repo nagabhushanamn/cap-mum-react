@@ -93,7 +93,7 @@ class App extends Component {
             <div className="list-group">
               <Route exact path="/" render={this.renderProducts.bind(this)}>
               </Route>
-              <Route path="/cart">
+              <Route path="/cart" re>
                 <ViewCart items={cart} />
               </Route>
             </div>
