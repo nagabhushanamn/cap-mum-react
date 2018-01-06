@@ -1,0 +1,12 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongods": {
+    "url": "mongodb://user1:user1@ds015760.mlab.com:15760/cap-shop-db",
+    "database": "cap-shop-db",
+    "name": "mongods",
+    "connector": "mongodb"
+  }
+}

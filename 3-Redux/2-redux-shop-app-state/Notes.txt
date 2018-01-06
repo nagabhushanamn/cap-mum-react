@@ -1,0 +1,16 @@
+
+Action(s)
+-----------------
+
+ LOAD_PRODUCTS
+   or 
+ LOAD_PRODUCTS_START
+ LOAD_PRODUCTS_SUCCESS
+ LOAD_PRODUCTS_FAILURE
+
+ ADD_NEW_REVIEW
+ BUY
+
+ -----------------------------
+
+ mongodb://user1:user1@ds015760.mlab.com:15760/cap-shop-db
