@@ -1,0 +1,18 @@
+
+UI- counter appln
+-------------------
+
+--------------------------------------------------
+
+Action(s)
+
+    - INCREMENT ==> {type:INCREMENT,value}
+    - DECREMENT ==> {type:INCREMENT,value}
+
+Action creator(s)
+
+function increment(value){
+    return {type:INCREMENT,value}
+}    
+
+--------------------------------------------------
